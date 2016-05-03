@@ -1,0 +1,18 @@
+<recipe title="ParamTest-Blending">
+  <info author="RES" date="13-06-08" time="21.12.23" />
+  <customer name="Walrus" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#Butter" path="Assets/Resources/Counter/#Butter.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="0" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,43 @@
+<recipe title="FreshnessTutorial">
+  <info author="(default)" date="13-06-07" time="16.27.11" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="True" delay="10" decay="90" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="180" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="0" spice="0" />
+  <dish name="#Carrot" path="Assets/Resources/Counter/#Carrot.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5" cooked="3" burned="1" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4" cooked="2" burned="1" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#GroundBeef" path="Assets/Resources/Counter/#GroundBeef.prefab" id="2">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="3" cooked="2" burned="1" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

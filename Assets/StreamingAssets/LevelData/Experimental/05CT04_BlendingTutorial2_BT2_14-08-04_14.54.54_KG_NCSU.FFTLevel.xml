@@ -1,0 +1,18 @@
+<recipe title="BT2">
+  <info author="KG_NCSU" date="14-08-04" time="14.54.54" />
+  <customer name="Chloe" />
+  <flavorText text="Okay! Now let's practice the blending minigame again. You will have 1 ingredient just like last time." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="0" spice="0" />
+  <dish name="#Kiwi" path="Assets/Resources/Counter/#Kiwi.prefab" id="1">
+    <step id="1" destination="Chop" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="1" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

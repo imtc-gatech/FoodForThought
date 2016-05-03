@@ -1,0 +1,143 @@
+<recipe title="E2_Scallops and Soup">
+  <info author="CGS-NCSU" date="13-02-15" time="18.10.19" />
+  <timer usesTimer="True" timeLimit="400" />
+  <stations chop="2" cook="2" prep="1" spice="1" />
+  <dish name="#CreamOfMushroom" path="Assets/Resources/Counter/#CreamOfMushroom.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="20.98569" cooked="5.014312" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="19" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="24" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Peas" path="Assets/Resources/Counter/#Peas.prefab" id="2">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="27.00001" cooked="4.999993" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="25" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="21" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Butter" path="Assets/Resources/Counter/#Butter.prefab" id="3">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="14" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="13" cooked="5" peak="20" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#ScallopClams" path="Assets/Resources/Counter/#ScallopClams.prefab" id="4">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="26" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="24" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="25" cooked="5" peak="45" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

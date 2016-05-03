@@ -1,0 +1,18 @@
+<recipe title="00000720_StirTutorial">
+  <info author="(default)" date="13-06-09" time="19.05.02" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Carrot" path="Assets/Resources/Counter/#Carrot.prefab" id="1">
+    <step id="1" destination="Cook" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Stirring numVegetables="20" totalTimeToFinish="60" timeBeforeStir="0.4" timeBeforeDanger="9" timeBeforeBurnt="5" burnRecovery="1" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

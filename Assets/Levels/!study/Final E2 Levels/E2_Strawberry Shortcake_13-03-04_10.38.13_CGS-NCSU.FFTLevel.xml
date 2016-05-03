@@ -1,0 +1,133 @@
+<recipe title="E2_Strawberry Shortcake">
+  <info author="CGS-NCSU" date="13-03-04" time="10.38.13" />
+  <timer usesTimer="True" timeLimit="325" />
+  <stations chop="2" cook="2" prep="1" spice="1" />
+  <dish name="#Cake" path="Assets/Resources/Counter/#Cake.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="18.00002" cooked="10.99998" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="24" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15.00022" cooked="14.99978" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Strawberry" path="Assets/Resources/Counter/#Strawberry.prefab" id="2">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="22.00005" cooked="11.99995" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="25.00337" cooked="14.99662" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="9.99085" cooked="22.00915" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Butter" path="Assets/Resources/Counter/#Butter.prefab" id="3">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="13" cooked="25" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="18.00529" cooked="14.99471" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Eggs" path="Assets/Resources/Counter/#Eggs.prefab" id="4">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="23.00209" cooked="4.997907" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="16" cooked="16" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="16.01169" cooked="24.98831" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Spice" visualState="2">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="22.00154" cooked="9.998463" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

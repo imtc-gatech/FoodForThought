@@ -1,0 +1,54 @@
+<recipe title="MinigameTesterMixed">
+  <info author="RES" date="13-05-17" time="15.30.28" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="True" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="60" />
+  <elapsedTimeTweak multiplier="1.5" />
+  <stations chop="0" cook="1" prep="1" spice="1" />
+  <dish name="#Chocolate" path="Assets/Resources/Counter/#Chocolate.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Chopping />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="2">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5" cooked="5" burned="5" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Sorting />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Broccoli" path="Assets/Resources/Counter/#Broccoli.prefab" id="2">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Placeholder delayInSeconds="5" useDelay="True" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4" cooked="4" burned="4" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

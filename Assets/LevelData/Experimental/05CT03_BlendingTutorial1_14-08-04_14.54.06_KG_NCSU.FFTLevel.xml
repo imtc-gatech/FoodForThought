@@ -1,0 +1,18 @@
+<recipe title="BT1">
+  <info author="KG_NCSU" date="14-08-04" time="14.54.06" />
+  <customer name="Chloe" />
+  <flavorText text="Ready to try the blending minigame? You will need to blend 1 ingredient to the peak." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Strawberry" path="Assets/Resources/Counter/#Strawberry.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="1" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

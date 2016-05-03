@@ -1,0 +1,137 @@
+<recipe title="Control_I_Salad">
+  <info author="ANK-NCSU" date="13-06-08" time="14.11.43" />
+  <customer name="Monkey" />
+  <flavorText text="Green and orange are the colors of the Monkiki salad order. Most importantly, NO DRESSING! Chop, slice, and dice all the ingredients for this healthy and crunchy salad. You will have 1 minute and 45 seconds." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="105" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="0" spice="0" />
+  <dish name="#Lettuce" path="Assets/Resources/Counter/#Lettuce.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7" cooked="6.036232" burned="7.963768" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10.00966" cooked="5.072465" burned="12.91787" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Cucumber" path="Assets/Resources/Counter/#Cucumber.prefab" id="2">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5" cooked="5.000004" burned="4.999996" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="6.002349" cooked="4.668965" burned="3.728684" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="8.00053" cooked="6.104778" burned="13.79469" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#GreenPepper" path="Assets/Resources/Counter/#GreenPepper.prefab" id="3">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="9" cooked="5.5" burned="12.5" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4.5" cooked="6" burned="7.5" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="2">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7.503719" cooked="5.058563" burned="9.437718" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Chop" visualState="3">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="8.012101" cooked="7.062716" burned="13.12518" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Carrot" path="Assets/Resources/Counter/#Carrot.prefab" id="4">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="3" cooked="7" burned="2" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="8.999755" cooked="5.098174" burned="10.80207" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5.003657" cooked="6.030095" burned="7.966247" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

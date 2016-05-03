@@ -1,0 +1,131 @@
+<recipe title="Control_I_Celery">
+  <info author="JT-NCSU" date="13-06-08" time="14.29.52" />
+  <customer name="Monkey" />
+  <flavorText text="Plain celery can have a lot of steps to get ready to eat. Monkiki doesn’t really like celery by itself, so you’ll have to mess with it so much it doesn’t even look like celery when you’re done! You will have 1 minute and 20 seconds." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="80" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="1" spice="1" />
+  <dish name="#Celery" path="Assets/Resources/Counter/#Celery.prefab" id="1">
+    <step id="1" destination="Spice" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2" cooked="3" burned="12" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15" cooked="5" burned="4" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2" cooked="2" burned="15" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="1" cooked="2" burned="20" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="5" destination="Spice" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="12" cooked="4" burned="100" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="6" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="6" cooked="15" burned="26" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="7" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2" cooked="4" burned="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="8" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10" cooked="2" burned="12" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="9" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2" cooked="2" burned="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="10" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="1" cooked="2" burned="46" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="11" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4" cooked="2" burned="7" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="12" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="3" cooked="2" burned="8" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,92 @@
+<recipe title="DemoLevel_ChickenAndRice">
+  <info author="Ben" date="13-08-27" time="15.37.35" />
+  <customer name="Fox" />
+  <flavorText text="Welcome to the Food For Thought Demo.  This is an example of the gameplay that is present in the game.  In this level, we're making chicken and rice.  " />
+  <freshness enabled="True" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="80" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="2" prep="1" spice="1" />
+  <dish name="#Chicken" path="Assets/Resources/Counter/#Chicken.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2.333333" cooked="2.333333" burned="2.333333" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Spicing numBottles="2" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Prep" visualState="2">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="3.152497" cooked="2.925776" burned="1.921728" peak="40" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Cook" visualState="3">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="1.929825" cooked="1.950067" burned="1.120108" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#ChickenStock" path="Assets/Resources/Counter/#ChickenStock.prefab" id="2">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10.99865" cooked="6.666674" burned="2.334676" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="20.05939" cooked="9.630224" burned="2.310392" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#WhiteRice" path="Assets/Resources/Counter/#WhiteRice.prefab" id="3">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7.060729" cooked="3.02834" burned="1.910931" peak="30" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="17.34818" cooked="9.999998" burned="2.651826" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

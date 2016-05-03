@@ -1,0 +1,119 @@
+<recipe title="M_I_Control Grapefruit">
+  <info author="JT-NCSU" date="13-06-08" time="14.48.56" />
+  <customer name="Monkey" />
+  <flavorText text="(introductory text here)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="300" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="1" spice="1" />
+  <dish name="#Grapefruit" path="Assets/Resources/Counter/#Grapefruit.prefab" id="1">
+    <step id="1" destination="Spice" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5" cooked="8" burned="3" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="12" cooked="4" burned="7" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Chopping />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="12" cooked="3" burned="3" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="5" destination="Spice" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Sorting numFoodItems="10" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="6" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="20" cooked="20" burned="40" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="7" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="20" cooked="20" burned="80" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="8" destination="Prep" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Sorting numFoodItems="10" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="9" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4" cooked="12" burned="8" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="10" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15" cooked="4" burned="4" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="11" destination="Cook" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="12" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="30" cooked="30" burned="200" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

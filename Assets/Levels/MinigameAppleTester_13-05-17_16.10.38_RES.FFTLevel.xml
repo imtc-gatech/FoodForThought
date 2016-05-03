@@ -1,0 +1,25 @@
+<recipe title="MinigameAppleTester">
+  <info author="RES" date="13-05-17" time="16.10.38" />
+  <customer name="Owl" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#Apple" path="Assets/Resources/Counter/#Apple.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Placeholder delayInSeconds="2" useDelay="True" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Sorting />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

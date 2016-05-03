@@ -1,0 +1,18 @@
+<recipe title="BT3">
+  <info author="KG_NCSU" date="14-08-04" time="14.55.11" />
+  <customer name="Chloe" />
+  <flavorText text="Let's continue learning the blending minigame. This time you will have 2 ingredients to place into your blender. Use your judgement to make sure they both hit the peak at the same time!" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Cantaloupe" path="Assets/Resources/Counter/#Cantaloupe.prefab" id="1">
+    <step id="1" destination="Cook" visualState="2">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="2" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

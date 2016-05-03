@@ -1,0 +1,31 @@
+<recipe title="Tutorial 2 Cooking Gauge 1  ">
+  <info author="(default)" date="13-06-07" time="14.56.28" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="0" spice="0" />
+  <dish name="#Cauliflower" path="Assets/Resources/Counter/#Cauliflower.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="9.999982" cooked="15.70002" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10" cooked="10" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

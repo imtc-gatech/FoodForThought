@@ -1,0 +1,17 @@
+<recipe title="Peak_1">
+  <info author="WRL-NCSU" date="13-02-12" time="12.10.45" />
+  <timer usesTimer="False" timeLimit="0" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#PigBlanket" path="Assets/Resources/Counter/#PigBlanket.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="8.778863" cooked="6.221137" peak="55" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,21 @@
+<recipe title="Tutorial 4 Peaks">
+  <info author="(default)" date="13-06-07" time="15.26.28" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Porkchop" path="Assets/Resources/Counter/#Porkchop.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15.30266" cooked="10.00001" burned="4.69733" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,18 @@
+<recipe title="00000750_BlendingTutorial">
+  <info author="(default)" date="13-06-09" time="19.23.59" />
+  <customer name="Monkey" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#HoneydewMelon" path="Assets/Resources/Counter/#HoneydewMelon.prefab" id="1">
+    <step id="1" destination="Prep" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="2" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

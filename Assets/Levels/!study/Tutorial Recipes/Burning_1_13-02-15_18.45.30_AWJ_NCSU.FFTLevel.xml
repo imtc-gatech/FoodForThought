@@ -1,0 +1,17 @@
+<recipe title="Burning_1">
+  <info author="AWJ_NCSU" date="13-02-15" time="18.45.30" />
+  <timer usesTimer="False" timeLimit="0" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Hotdogs" path="Assets/Resources/Counter/#Hotdogs.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7" cooked="15" burned="15" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

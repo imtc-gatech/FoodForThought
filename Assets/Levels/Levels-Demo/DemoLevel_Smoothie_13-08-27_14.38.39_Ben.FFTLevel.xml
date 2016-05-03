@@ -1,0 +1,47 @@
+<recipe title="DemoLevel_Smoothie">
+  <info author="Ben" date="13-08-27" time="14.38.39" />
+  <customer name="Monkey" />
+  <flavorText text="Welcome to the Food For Thought Demo!  In this level, we're blending up a delicious smoothie.  Enjoy the fun Blending Minigame." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="1" spice="0" />
+  <dish name="#Banana" path="Assets/Resources/Counter/#Banana.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2.40081" cooked="2.303644" burned="1.295547" peak="65" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="3" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Strawberry" path="Assets/Resources/Counter/#Strawberry.prefab" id="2">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2.051282" cooked="1.282051" burned="1.666667" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="2" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

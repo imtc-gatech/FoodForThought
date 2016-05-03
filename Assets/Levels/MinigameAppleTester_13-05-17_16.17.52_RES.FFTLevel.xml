@@ -1,0 +1,39 @@
+<recipe title="MinigameAppleTester">
+  <info author="RES" date="13-05-17" time="16.17.52" />
+  <customer name="Owl" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="1" spice="1" />
+  <dish name="#Apple" path="Assets/Resources/Counter/#Apple.prefab" id="1">
+    <step id="1" destination="Spice" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Spicing />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Chopping />
+        </parameters>
+      </gameplay>
+    </step>    
+    <step id="3" destination="Cook" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Stirring />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="4" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Sorting numFoodItems="6" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,70 @@
+<recipe title="CT4_M_I_PeachesNCreamSmoothie">
+  <info author="KG_NCSU" date="14-07-31" time="18.03.53" />
+  <customer name="Owl" />
+  <flavorText text="Now let's put your blender to work at the NYC Berry Festival! Olive the Owl would love a Peaches 'N Cream smoothie on this hot Summer day. You will have 1 minute 15 seconds for this recipe." />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="75" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="1" spice="2" />
+  <dish name="#Peach" path="Assets/Resources/Counter/#Peach.prefab" id="1">
+    <step id="1" destination="Spice" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="2" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="3.738426" cooked="5.666667" burned="7.594906" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5.219908" cooked="3.666667" burned="2.113426" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Yogurt" path="Assets/Resources/Counter/#Yogurt.prefab" id="2">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="16.68982" cooked="11.66666" burned="6.643521" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="6.055555" cooked="3.999999" burned="1.944446" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="3" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4.368056" cooked="7.004631" burned="5.627315" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

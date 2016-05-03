@@ -1,0 +1,25 @@
+<recipe title="MinigameStressTest">
+  <info author="RES" date="13-06-07" time="15.20.58" />
+  <customer name="Owl" />
+  <flavorText text="Very long intro text." />
+  <freshness enabled="True" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="0" spice="0" />
+  <dish name="#Avocado" path="Assets/Resources/Counter/#Avocado.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+		  <Blending />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

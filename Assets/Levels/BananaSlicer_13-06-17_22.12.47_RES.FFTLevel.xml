@@ -1,0 +1,28 @@
+<recipe title="BananaSlicer">
+  <info author="RES" date="13-06-17" time="22.12.47" />
+  <customer name="Wolf" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="True" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="5" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="0" spice="1" />
+  <dish name="#Banana" path="Assets/Resources/Counter/#Banana.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Chopping gameMode="proportionality" numCuts="4" />
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="4" cooked="4" burned="4" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

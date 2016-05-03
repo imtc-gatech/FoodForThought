@@ -1,0 +1,17 @@
+<recipe title="Cooking Gauge_1">
+  <info author="CGS-NCSU" date="13-02-12" time="11.58.46" />
+  <timer usesTimer="False" timeLimit="0" />
+  <stations chop="0" cook="1" prep="0" spice="0" />
+  <dish name="#Porkchop" path="Assets/Resources/Counter/#Porkchop.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="15" cooked="5" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,27 @@
+<recipe title="Cooking_2">
+  <info author="AWJ-NCSU" date="13-02-12" time="11.48.09" />
+  <timer usesTimer="False" timeLimit="0" />
+  <stations chop="1" cook="1" prep="0" spice="0" />
+  <dish name="#Cauliflower" path="Assets/Resources/Counter/#Cauliflower.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10" cooked="5" peak="50" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

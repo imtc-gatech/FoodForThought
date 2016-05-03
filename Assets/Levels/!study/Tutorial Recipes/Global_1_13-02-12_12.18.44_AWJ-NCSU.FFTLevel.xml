@@ -1,0 +1,27 @@
+<recipe title="Global_1">
+  <info author="AWJ-NCSU" date="13-02-12" time="12.18.44" />
+  <timer usesTimer="True" timeLimit="60" />
+  <stations chop="1" cook="1" prep="0" spice="0" />
+  <dish name="#Ham" path="Assets/Resources/Counter/#Ham.prefab" id="1">
+    <step id="1" destination="Cook" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="10" cooked="5" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7" cooked="3" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

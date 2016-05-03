@@ -1,0 +1,18 @@
+<recipe title="CT9_M_I_BlendingTutorial5">
+  <info author="KG_NCSU" date="14-08-12" time="13.24.05" />
+  <customer name="Chloe" />
+  <flavorText text="Your smoothies are the talk of the Berry Festival! Let's keep up the pace by adding one more ingredient to the blending minigame. This time you will practice with 3 ingredients to blend. Be sure to use your best judgement to blend them all to the peak!" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#Pineapple" path="Assets/Resources/Counter/#Pineapple.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="3" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

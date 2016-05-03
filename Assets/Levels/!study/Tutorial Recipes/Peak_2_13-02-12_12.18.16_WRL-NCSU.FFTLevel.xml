@@ -1,0 +1,27 @@
+<recipe title="Peak_2">
+  <info author="WRL-NCSU" date="13-02-12" time="12.18.16" />
+  <timer usesTimer="False" timeLimit="0" />
+  <stations chop="0" cook="1" prep="1" spice="0" />
+  <dish name="#Meatballs" path="Assets/Resources/Counter/#Meatballs.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="7.576597" cooked="4.634335" burned="1.789068" peak="45" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Cook" visualState="1">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="12.43264" cooked="7.813702" burned="4.753657" peak="55" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

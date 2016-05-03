@@ -1,0 +1,45 @@
+<recipe title="DemoLevel_MinigameRush">
+  <info author="Ben" date="13-08-27" time="15.26.41" />
+  <customer name="Wolf" />
+  <flavorText text="Here's a level for you to try out some of the minigames.  No time limit here, so take your time and give it your best shot!" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="1" prep="1" spice="1" />
+  <dish name="#Banana" path="Assets/Resources/Counter/#Banana.prefab" id="1">
+    <step id="1" destination="Prep" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Blending numIngredients="0" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Potatoes" path="Assets/Resources/Counter/#Potatoes.prefab" id="2">
+    <step id="1" destination="Chop" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Chopping gameMode="proportionality" numCuts="8" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Carrot" path="Assets/Resources/Counter/#Carrot.prefab" id="3">
+    <step id="1" destination="Cook" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Stirring numVegetables="20" totalTimeToFinish="45" timeBeforeStir="0.4" timeBeforeDanger="10" timeBeforeBurnt="5" burnRecovery="1" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Cake" path="Assets/Resources/Counter/#Cake.prefab" id="4">
+    <step id="1" destination="Spice" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Spicing numBottles="2" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

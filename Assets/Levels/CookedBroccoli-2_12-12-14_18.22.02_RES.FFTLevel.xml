@@ -1,0 +1,26 @@
+<recipe title="CookedBroccoli-2">
+  <info author="RES" date="12-12-14" time="18.22.02" />
+  <stations chop="0" cook="0" prep="2" spice="0" />
+  <dish name="#Broccoli" path="Assets/Resources/Counter/#Broccoli.prefab" id="1">
+    <step id="1" destination="Prep">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="5.333333" cooked="2.666667" />
+            <readonly isCookable="True" isBurnable="False" hasPeakFlavor="False" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Prep">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="6.506465" cooked="6.417424" burned="2.07611" peak="80" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

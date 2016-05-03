@@ -1,0 +1,18 @@
+<recipe title="ParamTest-Stirring">
+  <info author="RES" date="13-06-09" time="01.56.03" />
+  <customer name="Fox" />
+  <flavorText text="(intro text)" />
+  <freshness enabled="False" delay="5" decay="60" starPenalty="2" />
+  <timer usesTimer="False" timeLimit="0" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="0" cook="0" prep="1" spice="0" />
+  <dish name="#Butter" path="Assets/Resources/Counter/#Butter.prefab" id="1">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Stirring numVegetables="15" totalTimeToFinish="15" timeBeforeStir="0.9" timeBeforeDanger="3" timeBeforeBurnt="10" burnRecovery="1.4" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>

@@ -1,0 +1,47 @@
+<recipe title="TerribleCarrotCheddarBulldogStew">
+  <info author="RES" date="13-08-28" time="11.03.41" />
+  <customer name="Bulldog" />
+  <flavorText text="Bulldogs will eat anything. " />
+  <freshness enabled="True" delay="10" decay="60" starPenalty="2" />
+  <timer usesTimer="True" timeLimit="180" />
+  <elapsedTimeTweak multiplier="1" />
+  <stations chop="1" cook="0" prep="1" spice="1" />
+  <dish name="#Carrot" path="Assets/Resources/Counter/#Carrot.prefab" id="1">
+    <step id="1" destination="Chop" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="8" cooked="2" burned="5" peak="35" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Chop" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Stirring numVegetables="10" totalTimeToFinish="10" timeBeforeStir="0.4" timeBeforeDanger="5" timeBeforeBurnt="1" burnRecovery="1" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+  <dish name="#Cheddar" path="Assets/Resources/Counter/#Cheddar.prefab" id="2">
+    <step id="1" destination="Prep" visualState="0">
+      <gameplay type="ElapsedTime">
+        <parameters>
+          <timing>
+            <tweakable uncooked="2.007692" cooked="3.346154" burned="3.346154" peak="50" />
+            <readonly isCookable="True" isBurnable="True" hasPeakFlavor="True" />
+          </timing>
+        </parameters>
+      </gameplay>
+    </step>
+    <step id="2" destination="Spice" visualState="1">
+      <gameplay type="MiniGame">
+        <parameters>
+          <Spicing numBottles="2" />
+        </parameters>
+      </gameplay>
+    </step>
+  </dish>
+</recipe>
